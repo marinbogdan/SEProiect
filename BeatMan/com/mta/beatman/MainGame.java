@@ -1,5 +1,5 @@
 package com.mta.beatman;
-
+//aici pune cristi pe git
 import java.awt.GraphicsDevice;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;

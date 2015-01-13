@@ -3,7 +3,7 @@ package com.mta.beatman.camera;
 import com.badlogic.gdx.Gdx;
 
 public class VirtualViewport {  
-	  
+	  // first commit dunareanu
     float virtualWidth;  
     float virtualHeight;  
   

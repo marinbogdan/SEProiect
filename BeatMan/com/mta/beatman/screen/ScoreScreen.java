@@ -1,10 +1,10 @@
-package com.youtube.invaders.screen;
+package com.mta.beatman.screen;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.youtube.invaders.MainGame;
-import com.youtube.invaders.TextureManager;
-import com.youtube.invaders.camera.OrthoCamera;
+import com.mta.beatman.MainGame;
+import com.mta.beatman.TextureManager;
+import com.mta.beatman.camera.OrthoCamera;
 
 public class ScoreScreen extends Screen {
 

@@ -1,15 +1,15 @@
-package com.youtube.invaders.entity;
+package com.mta.beatman.entity;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g3d.Shader;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
-import com.youtube.invaders.MainGame;
-import com.youtube.invaders.TextureManager;
-import com.youtube.invaders.camera.OrthoCamera;
-import com.youtube.invaders.screen.GameOverScreen;
-import com.youtube.invaders.screen.ScreenManager;
+import com.mta.beatman.MainGame;
+import com.mta.beatman.TextureManager;
+import com.mta.beatman.camera.OrthoCamera;
+import com.mta.beatman.screen.GameOverScreen;
+import com.mta.beatman.screen.ScreenManager;
 
 public class EntityManager {
 

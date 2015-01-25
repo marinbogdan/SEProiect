@@ -1,4 +1,4 @@
-package com.youtube.invaders.screen;
+package com.mta.beatman.screen;
 
 
 public class ScreenManager {

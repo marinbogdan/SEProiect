@@ -8,6 +8,16 @@
 			<attribute name="ignore_optional_problems" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="main"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders/libs/gdx.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders/libs/gdx-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-desktop/libs/gdx-backend-lwjgl.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-desktop/libs/gdx-backend-lwjgl-natives.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-desktop/libs/gdx-backend-lwjgl-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-desktop/libs/gdx-natives.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-android/libs/gdx-backend-android.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-android/libs/gdx-backend-android-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

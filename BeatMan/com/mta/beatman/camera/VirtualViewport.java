@@ -11,7 +11,7 @@ public class VirtualViewport {
         return virtualWidth;  
     }  
   
-    public float getVirtualHeight() {  
+    public floaat getVirtualHeight() {  
         return virtualHeight;  
     }  
   

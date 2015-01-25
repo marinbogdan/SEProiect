@@ -35,7 +35,7 @@ public class SinglePlayer extends Screen {
         Gdx.input.setInputProcessor(stage);
         //
         
-        Skin skin=new Skin(Gdx.files.internal("uiskin.json"));
+        Skin skin=new Skin(Gdx.files.internal("assets/uiskin.json"));
         //
         //
         button=new TextButton("Start game!!", skin);

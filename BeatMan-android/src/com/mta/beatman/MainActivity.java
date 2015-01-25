@@ -1,4 +1,4 @@
-package com.mta.beatman;
+package src.com.mta.beatman;
 
 import android.os.Bundle;
 

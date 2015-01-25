@@ -19,5 +19,8 @@
 	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-desktop/libs/gdx-natives.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-android/libs/gdx-backend-android.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-android/libs/gdx-backend-android-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-android/libs/armeabi"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-android/libs/armeabi-v7a"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/rusu/Desktop/game/SpaceInvaders/SpaceInvaders-android/libs/x86"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

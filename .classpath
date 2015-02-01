@@ -11,18 +11,18 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="main"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-backend-android.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-backend-gwt.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-backend-jglfw.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-backend-jglfw-natives.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-backend-lwjgl.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-backend-lwjgl-natives.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-backend-robovm.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-natives.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-openal.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-setup.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-setup-ui.jar"/>
-	<classpathentry exported="true" kind="lib" path="F:/Programe/Android/SpaceInvaders/SpaceInvaders/libs/gdx-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-backend-android.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-backend-gwt.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-backend-jglfw.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-backend-jglfw-natives.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-backend-lwjgl.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-backend-lwjgl-natives.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-backend-robovm.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-natives.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-openal.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-setup.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-setup-ui.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Cristian/git/SEProject/BeatMan/libs/gdx-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

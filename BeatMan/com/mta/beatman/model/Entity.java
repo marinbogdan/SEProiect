@@ -1,4 +1,4 @@
-package com.mta.beatman.entity;
+package com.mta.beatman.model;
 
 import java.awt.Font;
 import java.awt.GraphicsDevice;
@@ -13,7 +13,6 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
-import com.mta.beatman.MainGame;
 
 public abstract class Entity {
 

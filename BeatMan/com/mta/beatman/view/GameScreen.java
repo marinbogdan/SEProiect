@@ -1,12 +1,15 @@
-package com.mta.beatman.screen;
+package com.mta.beatman.view;
+
+import java.sql.SQLException;
 
 import javax.print.DocFlavor.STRING;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import com.mta.beatman.MainGame;
-import com.mta.beatman.camera.OrthoCamera;
-import com.mta.beatman.entity.EntityManager;
+import com.mta.beatman.controller.EntityManager;
+import com.mta.beatman.controller.OrthoCamera;
+import com.mta.beatman.model.MainGame;
+import com.mta.beatman.model.Screen;
 
 public class GameScreen extends Screen {
 
@@ -20,11 +23,11 @@ public class GameScreen extends Screen {
 	public void create() {
 		camera = new OrthoCamera();
 		camera.resize();
-		entityManager = new EntityManager(MainGame.numbers_of_enemy,MainGame.numbers_of_beers, camera);
+		entityManager = new EntityManager(MainGame.numbers_of_enemy,MainGame.numbers_of_beers, camera,user);
 	}
 
 	@Override
-	public void update() {
+	public void update() throws ClassNotFoundException, SQLException  {
 		camera.update();
 		entityManager.update();
 	}

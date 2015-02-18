@@ -1,4 +1,4 @@
-package com.mta.beatman.screen;
+package com.mta.beatman.view;
 
 import java.awt.Font;
 import java.awt.Rectangle;
@@ -25,10 +25,12 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldListener;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle;
-import com.mta.beatman.MainGame;
-import com.mta.beatman.TextureManager;
-import com.mta.beatman.camera.OrthoCamera;
-//import com.mysql.jdbc.PreparedStatement;
+import com.mta.beatman.controller.OrthoCamera;
+import com.mta.beatman.controller.ScreenManager;
+import com.mta.beatman.controller.TextureManager;
+import com.mta.beatman.model.MainGame;
+import com.mta.beatman.model.Screen;
+import com.mysql.jdbc.PreparedStatement;
 
 public class MenuScreen extends Screen {
 
@@ -40,17 +42,22 @@ public class MenuScreen extends Screen {
 	Stage stage;
 	TextField txtUsername;
 	
+	public MenuScreen(OrthoCamera camera2) {
+		camera=camera2;
+		ok=0;
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void create() {
-		
-		camera = new OrthoCamera();
+		ok=0;
 		camera.resize();
 		stage = new Stage(Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), true);
         Gdx.input.setInputProcessor(stage);
         try {
         	//sql code
         	
-			//sql();
+			sql();
         	
         	
 		} catch (Exception e) {
@@ -61,23 +68,24 @@ public class MenuScreen extends Screen {
 	}
 	//sql code
 	
-	/*public void sql() throws Exception
+	public void sql() throws Exception
 	{
+		System.out.println("\nData tabel results!!\n");
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "MarinBogdan3");
-		java.sql.PreparedStatement statement = con.prepareStatement("select *from datasource");
+		java.sql.PreparedStatement statement = con.prepareStatement("select * from datasource order by point DESC");
 		ResultSet result=statement.executeQuery();
 		while(result.next())
 			{
 			 System.out.println(result.getString(2)+ " " + result.getString(3));
 			}
-	}*/
+	}
 	
 	@Override
-	public void update() {
+	public void update() throws Exception {
 		//set camera
 		camera.update();
-		
+		ok=0;
 		if (Gdx.input.isTouched()) {
 			Vector2 touch = camera.unprojectCoordinates(Gdx.input.getX(), Gdx.input.getY());
 			
@@ -91,6 +99,12 @@ public class MenuScreen extends Screen {
 				if(touch.y>MainGame.HEIGHT-365 && touch.y<MainGame.HEIGHT-365+TextureManager.GAME_SETTINGS.getHeight())
 				{
 					ok=2;
+					      			        				
+				}
+			if(touch.x>MainGame.WIDTH/2-TextureManager.GAME_EXIT.getWidth()/2 && touch.x<MainGame.WIDTH/2+TextureManager.GAME_EXIT.getWidth()/2)
+				if(touch.y>MainGame.HEIGHT-485 && touch.y<MainGame.HEIGHT-485+TextureManager.GAME_EXIT.getHeight())
+				{
+					 Gdx.app.exit();
 					      			        				
 				}
 		
@@ -114,6 +128,8 @@ public class MenuScreen extends Screen {
 		
 		
 		sb.setProjectionMatrix(camera.combined);
+		sb.setColor(1, 1, 1, 1);
+		
 		sb.begin();
 		//draw the menu
 		sb.draw(TextureManager.GAME_SINGLE_PLAYER, MainGame.WIDTH/2-TextureManager.GAME_SINGLE_PLAYER.getWidth()/2,MainGame.HEIGHT-125);

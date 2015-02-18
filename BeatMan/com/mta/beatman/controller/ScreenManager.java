@@ -1,4 +1,6 @@
-package com.mta.beatman.screen;
+package com.mta.beatman.controller;
+
+import com.mta.beatman.model.Screen;
 
 
 public class ScreenManager {

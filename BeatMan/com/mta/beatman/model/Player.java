@@ -1,13 +1,12 @@
-package com.mta.beatman.entity;
+package com.mta.beatman.model;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.math.Vector2;
-import com.mta.beatman.MainGame;
-import com.mta.beatman.TextureManager;
-import com.mta.beatman.camera.OrthoCamera;
-import com.mta.beatman.screen.MenuScreen;
-import com.mta.beatman.screen.ScreenManager;
+import com.mta.beatman.controller.EntityManager;
+import com.mta.beatman.controller.OrthoCamera;
+import com.mta.beatman.controller.TextureManager;
+import com.mta.beatman.view.MenuScreen;
 
 public class Player extends Entity {
 

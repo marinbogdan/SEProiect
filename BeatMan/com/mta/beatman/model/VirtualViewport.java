@@ -1,9 +1,9 @@
-package com.mta.beatman.camera;
+package com.mta.beatman.model;
 
 import com.badlogic.gdx.Gdx;
 
 public class VirtualViewport {  
-	  // first commit dunareanu
+	  
     float virtualWidth;  
     float virtualHeight;  
   

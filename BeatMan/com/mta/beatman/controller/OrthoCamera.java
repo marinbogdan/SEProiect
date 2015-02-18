@@ -1,10 +1,11 @@
-package com.mta.beatman.camera;
+package com.mta.beatman.controller;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
-import com.mta.beatman.MainGame;
+import com.mta.beatman.model.MainGame;
+import com.mta.beatman.model.VirtualViewport;
 
 public class OrthoCamera extends OrthographicCamera {
 

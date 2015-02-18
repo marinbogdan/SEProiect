@@ -1,15 +1,22 @@
-package com.mta.beatman.entity;
+package com.mta.beatman.controller;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g3d.Shader;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
-import com.mta.beatman.MainGame;
-import com.mta.beatman.TextureManager;
-import com.mta.beatman.camera.OrthoCamera;
-import com.mta.beatman.screen.GameOverScreen;
-import com.mta.beatman.screen.ScreenManager;
+import com.mta.beatman.model.Beer;
+import com.mta.beatman.model.Enemy;
+import com.mta.beatman.model.Entity;
+import com.mta.beatman.model.MainGame;
+import com.mta.beatman.model.Player;
+import com.mta.beatman.view.GameOverScreen;
+import com.mysql.jdbc.Statement;
 
 public class EntityManager {
 
@@ -17,8 +24,11 @@ public class EntityManager {
 	private final Player player;
 	public int number;
 	public int ok;
+	public int contro=0;
 	SpriteBatch mybatch;
-	public EntityManager(int enemey,int beers, OrthoCamera camera) {
+	String username;
+	public EntityManager(int enemey,int beers, OrthoCamera camera,String user) {
+		this.username=user;
 		ok=0;
 		number=0;
 		player = new Player(new Vector2(MainGame.WIDTH/2, 15), new Vector2(0, 0), this, camera);
@@ -36,7 +46,7 @@ public class EntityManager {
 		}
 	}
 	
-	public void update() {
+	public void update() throws ClassNotFoundException, SQLException {
 		for (Entity e : entities)
 			e.update();
 		player.update();
@@ -45,6 +55,7 @@ public class EntityManager {
 	
 	public void render(SpriteBatch sb) {
 		mybatch=sb;
+//sb.setColor(1, 1, 1, 1);
 		for (Entity e : entities)
 			e.render(sb);
 		player.render(sb);
@@ -53,15 +64,22 @@ public class EntityManager {
 		
 		float r=(float) (1-MainGame.nr/10);
 		//System.out.println(MainGame.nr);
+		if(contro==1)
+			{
+			r=0;
+			MainGame.nr=0;
+			}
 		sb.setColor(1, 1, 1, r);
 		
 		}
 	
 	private void checkCollisions() {
+		contro=0;
 		for (Enemy e : getEnemy()) {
 			if (e.getBounds().overlaps(player.getBounds())) {
-		
-				ScreenManager.setScreen(new GameOverScreen(false));
+				ScreenManager.setScreen(new GameOverScreen(false,username,ok));
+				MainGame.nr=0;
+				contro=1;
 			}
 		}
 		for (Beer e : getBeers()) {
@@ -69,6 +87,14 @@ public class EntityManager {
 					entities.removeValue(e, false);
 					ok++;
 					MainGame.nr=ok;
+			
+					if(ok==10)
+					{
+						contro=1;
+						ScreenManager.setScreen(new GameOverScreen(false,username,ok));
+						MainGame.nr=0;
+					}
+					
 				}
 		}
 	}

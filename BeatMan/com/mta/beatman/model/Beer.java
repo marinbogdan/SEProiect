@@ -1,9 +1,8 @@
-package com.mta.beatman.entity;
+package com.mta.beatman.model;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
-import com.mta.beatman.MainGame;
-import com.mta.beatman.TextureManager;
+import com.mta.beatman.controller.TextureManager;
 
 public class Beer extends Entity {
 

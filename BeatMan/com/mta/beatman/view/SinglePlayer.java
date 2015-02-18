@@ -1,4 +1,4 @@
-package com.mta.beatman.screen;
+package com.mta.beatman.view;
 
 import javax.swing.JTable;
 
@@ -18,9 +18,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.mta.beatman.MainGame;
-import com.mta.beatman.TextureManager;
-import com.mta.beatman.camera.OrthoCamera;
+import com.mta.beatman.controller.OrthoCamera;
+import com.mta.beatman.controller.ScreenManager;
+import com.mta.beatman.controller.TextureManager;
+import com.mta.beatman.model.MainGame;
+import com.mta.beatman.model.Screen;
 
 public class SinglePlayer extends Screen {
 	Stage stage;
@@ -35,7 +37,7 @@ public class SinglePlayer extends Screen {
         Gdx.input.setInputProcessor(stage);
         //
         
-        Skin skin=new Skin(Gdx.files.internal("assets/uiskin.json"));
+        Skin skin=new Skin(Gdx.files.internal("uiskin.json"));
         //
         //
         button=new TextButton("Start game!!", skin);

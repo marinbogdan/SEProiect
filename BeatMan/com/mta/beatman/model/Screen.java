@@ -1,4 +1,6 @@
-package com.mta.beatman.screen;
+package com.mta.beatman.model;
+
+import java.sql.SQLException;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
@@ -6,7 +8,7 @@ public abstract class Screen {
 
 	public abstract void create() throws Exception;
 	
-	public abstract void update();
+	public abstract void update() throws ClassNotFoundException, SQLException, Exception;
 	
 	public abstract void render(SpriteBatch sb);
 	
